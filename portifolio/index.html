@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tauri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/java.js" defer></script>
+    <title>Programaçao Will</title>
+</head>
+
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/Preview.jpg" alt="logo da agencia" class="logo-img">
+                </a>
+            </div><!--logo-->
+            <nav class="meno">
+                <ul>
+                    <li>
+                        <a href="#">Inicio</a>
+                        <a href="#especialidades">Especialidades</a>
+                        <a href="#sobre">Sobre</a>
+                        <a href="#contato">Contatos</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="btn-contato">
+                <a href="#">
+                    <button>contato</button>
+                </a>
+            </div>
+            <div class="btn-abrir" id="btnMenu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="menu-mobile" id="menumobile">
+                <div class="btn-fechar">
+                    <i class="fa-solid fa-xmark"></i>
+                </div><!--BTN-FECHAR-->
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Inicio</a>
+                            <a href="#especialidades">Especialidades</a>
+                            <a href="#sobre">Sobre</a>
+                            <a href="#contato">Contatos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div><!--MENU-MOBILE-->
+            <div class="orveley-mobile">
+
+            </div>
+        </div><!--interface-->
+    </header>
+    <main>
+        <section class="topo-do-site">
+            <div class="interface2">
+                <div class="flex">
+                    <div class="lado-esquerdo">
+                        <h1>TRANSFORMANDO IDEIAS DIGITAIS EM REALIDADES<span>.</span></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper ipsum eget
+                            venenatis lacinia. Donec cursus nunc ut nulla tincidunt pulvinar. Nunc eu aliquet eros, ac
+                            vulputate ante. Pellentesque imperdiet felis sem, non volutpat mi pretium sed. Fusce in
+                            sagittis diam.</p>
+                        <div class="btn-contato">
+                            <a href="#">
+                                <button>Entre em contato!</button>
+                            </a>
+                        </div>
+                    </div><!--lado-esquerdo-->
+
+                    <div class="img-txt">
+                        <img src="img/pessoa.png" alt="">
+                    </div><!--img-txt-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section>
+        <section class="Especialidades">
+            <div class="interface" id="especialidades">
+                <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span></h2>
+                <div class="flex">
+                    <div class="especilidades-box">
+                        <i class="fa-brands fa-wordpress"></i>
+                        <h3>Web Site</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel rhoncus tortor.</p>
+                    </div><!--especialidades-box-->
+
+                    <div class="especilidades-box">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <h3>Carrinho</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel rhoncus tortor.</p>
+                    </div><!--especialidades-box-->
+
+                    <div class="especilidades-box">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>WordPress</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel rhoncus tortor.</p>
+                    </div><!--especialidades-box-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--especialidades-->
+        <section id="sobre" class="Sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="img/foto.png" alt="" srcset="">
+                    </div><!--img-sbre-->
+                    <div class="txt-sobre">
+                        <h2>MAIS SOBRE</h2><span>MINHAS PERSONALIDADES.</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent molestie erat ac velit
+                            interdum tristique. Maecenas vestibulum a leo id tristique. Vivamus in lacinia felis.
+                            Maecenas nec quam ac orci vulputate bibendum. Integer vehicula ultrices tellus. Mauris
+                            commodo nibh nec diam dictum, id consequat velit rhoncus. Sed at consectetur nunc.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent molestie erat ac velit
+                            interdum tristique. Maecenas vestibulum a leo id tristique. Vivamus in lacinia felis.
+                            Maecenas nec quam ac orci vulputate bibendum. Integer vehicula ultrices tellus. Mauris
+                            commodo nibh nec diam dictum, id consequat velit rhoncus. Sed at consectetur nunc.</p>
+
+                        <div class="btn-social">
+                            <a href="#"><button><i class="fa-brands fa-instagram"></i></button></a>
+                            <a href="https://www.linkedin.com/feed/"><button><i
+                                        class="fa-brands fa-linkedin-in"></i></button></a>
+                            <a href="https://github.com/dashboard"><button><i
+                                        class="fa-brands fa-square-github"></i></button></a>
+                        </div>
+                    </div><!--txt-sobre-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
+        <section class="conteiner">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTIFOLIO</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url('./img/foto.jpg');" onclick="openModal('./img/foto.jpg')">
+                        <div class="orveley">
+                            <p>projeto1</p>
+                        </div>
+                    </div>
+                    <div class="img-port" style="background-image: url('./img/imagem.jpg');" onclick="openModal('./img/imagem.jpg')">
+                        <div class="orveley">
+                            <p>projeto 2</p>
+                        </div>
+                    </div>
+                    <div class="img-port" style="background-image: url('./img/imagem.jpg');" onclick="openModal('./img/imagem.jpg')">
+                        <div class="orveley">
+                            <p>projeto 3</p>
+                        </div>
+                    </div>
+                    
+                <div id="modal" class="modal">
+                    <span class="close" onclick="closeModal('./img/foto.jpg')">&times;</span>
+                    <img id="modalImg" class="modal-content">
+                </div>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--conteiner-->
+    </main>
+</body>
+<footer>
+    <div class="interface" id="contato">
+        <div class="cima">
+            <div class="flex">
+                <div class="logo-cima">
+                    <img src="img/Preview.jpg" alt="" srcset="">
+                </div><!--logo-cima-->
+                <div class="btn-social">
+                    <a href="#"><button><i class="fa-brands fa-instagram"></i></button></a>
+                    <a href="#"><button><i class="fa-brands fa-facebook"></i></button></a>
+                    <a href="#"><button><i class="fa-brands fa-twitter"></i></button></a>
+                </div>
+            </div>
+        </div><!--cima-->
+        <div class="baixo">
+            <div class="logo-baixo">
+                <p> <i class="fa-solid fa-envelope"></i><a href="milto:willian@gamil.com"> willian@gamil.com</a></p>
+
+            </div><!--logo-baixo-->
+        </div><!--baixo-->
+    </div><!--interface-->
+</footer>
+
+</html>

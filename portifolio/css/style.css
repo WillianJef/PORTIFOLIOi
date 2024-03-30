@@ -1,0 +1,577 @@
+/* GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tauri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.interface {
+    width: 100%;
+    margin: 0 auto;
+}
+
+h2.titulo {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+}
+
+h2.titulo span {
+    color: rgb(63, 98, 216);
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.flex {
+    display: flex;
+}
+
+/* ESTILO DO CABEÇARIO */
+header {
+    padding: 40px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 15px;
+    background-color: #2e2d2de7;
+    z-index: 100000;
+    box-shadow: 0 0 15px rgba(235, 234, 234, 0.301);*/
+
+}
+.logo-img{
+    width: 130px; /* Ajuste o tamanho conforme necessário */
+    transition: transform 0.3s ease;
+}
+.logo:hover .logo-img {
+    transform: scale(1.1); /* Aumenta a escala em 10% */
+}
+header a {
+    color: rgb(92, 92, 92);
+    text-decoration: none;
+}
+
+header a:hover {
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
+header nav ul {
+    list-style-type: none;
+
+}
+
+header nav.meno ul li a {
+    display: inline;
+    padding: 0 40px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.orveley-mobile {
+    background-color: rgba(15, 15, 15, 0.89);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2222;
+    display: none;
+}
+
+/* MENU MOBILE */
+.btn-abrir i {
+    color: white;
+    font-size: 30px;
+    display: none;
+}
+
+.menu-mobile {
+    background-color: rgba(15, 15, 15, 0.952);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3333;
+    width: 0%;
+    overflow: hidden;
+    transition: all 0.5s;
+    display: none;
+}
+
+.menu-mobile.abrir-menu {
+    width: 30%;
+}
+
+.menu-mobile.abrir-menu~.orveley-mobile {
+    display: block;
+}
+
+.menu-mobile nav ul li a {
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: rgba(240, 175, 55, 0.856);
+    display: block;
+    transform: scale(1.02);
+    transition: all .3s;
+}
+
+.menu-mobile .btn-fechar i {
+    color: white;
+    font-size: 30px;
+    padding-bottom: 7px;
+    padding: 15px 4%;
+}
+
+/* MENU MOBILE FIM */
+
+header .btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:  rgba(241, 165, 25, 0.884);
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+}
+
+header .btn-contato button:hover {
+    background-color:rgba(243, 174, 47, 0.781);
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
+/* TOPO DO SITE */
+section.topo-do-site {
+    padding: 40px 4%;
+    margin-top: -25px;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: white;
+}
+
+.topo-do-site h1 {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+
+}
+
+.topo-do-site h1 span {
+    color:  rgba(241, 165, 25, 0.884);
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.topo-do-site p {
+    color: white;
+    margin: 40px 0;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+section .btn-contato button {
+    padding: 15px 35px;
+    border: 0;
+    border-radius: 25px;
+    background-color:  rgba(241, 165, 25, 0.884);
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+section .btn-contato button:hover {
+    background-color: rgba(243, 174, 47, 0.781);
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
+.topo-do-site .img-txt img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    margin-bottom: 35px;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/* ESPECIALIDADES */
+section.especialidades {
+    padding: 40px 8%;
+}
+
+section.Especialidades .flex {
+    gap: 60px;
+    padding: 25px 0px;
+}
+
+.Especialidades .especilidades-box {
+    color: white;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin: 25px;
+}
+
+.Especialidades .especilidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px white;
+    transition: all 0.4s;
+}
+
+.Especialidades .especilidades-box i {
+    color:  rgba(241, 165, 25, 0.884);
+    font-size: 65px;
+    margin: 15px 0;
+}
+
+.Especialidades .especilidades-box p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.Especialidades .especilidades-box h3 {
+    font-size: 33px;
+
+}
+h2.titulo span{
+    color:  rgba(241, 165, 25, 0.884);
+}
+
+/* FINAL DO SITE */
+section.Sobre {
+    padding: 40px 4%;
+    box-shadow: 0px 15px 25px rgba(255, 255, 255, 0.233);
+}
+
+section.Sobre .flex {
+    align-items: center;
+    gap: 20px;
+}
+
+.Sobre .txt-sobre {
+    color: white;
+}
+
+.Sobre .txt-sobre h2 {
+    font-size: 40px;
+}
+
+.Sobre .txt-sobre span {
+    font-size: 40px;
+    color: rgba(241, 165, 25, 0.884);
+}
+
+.Sobre .txt-sobre p {
+    font-size: 18px;
+    margin: 10px 0;
+
+}
+
+.btn-social button {
+    font-size: 25px;
+    padding: 25px;
+    margin: 5px 7px;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    background-color:  rgba(241, 165, 25, 0.884);
+}
+
+.btn-social button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.466);
+    transition: all 0.4s;
+}
+
+/* PORTIFOLIO */
+section.conteiner {
+    padding: 80px 4%;
+
+}
+
+section.conteiner .flex {
+    justify-content: space-around;
+}
+
+section.conteiner .flex .img-port {
+    margin: 30px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    margin: 0px 10px;
+    background-size: cover;
+    background-position: 100% 0%;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+    transition: all 4s;
+}
+
+.orveley {
+    position: absolute;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.329);
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 600;
+    opacity: 0;
+    transition: .4s;
+}
+
+.orveley p {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+.orveley:hover {
+    opacity: 1;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+}
+
+.modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+.modal-content {
+    margin: 20px auto;
+    display: block;
+    max-width: 100%;
+    max-height: 90%;
+    opacity: 0;
+    /* Inicia com opacidade 0 */
+    transform: scale(0.7);
+    /* Inicia com escala menor */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.modal.show .modal-content {
+    opacity: 1;
+    /* Altera para opacidade 1 */
+    transform: scale(1);
+}
+
+.close {
+    color: #fff;
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.img-port onclick {
+    transition: all 0.2s;
+}
+
+/* RODAPE DO SITE */
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.144);
+
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .flex .logo-cima img {
+    height: 115px;
+    border-bottom: 2px solid rgba(241, 165, 25, 0.884);
+}
+
+footer .flex .logo-cima {
+    margin-bottom: 25px;
+}
+
+footer .logo-baixo {
+    padding: 40px 0;
+
+}
+
+footer .cima {
+    border-bottom: 2px solid rgba(241, 165, 25, 0.884);
+}
+
+footer .logo-baixo p i {
+    color:  rgba(241, 165, 25, 0.884);
+    font-size: 25px;
+    padding: 0 7px;
+}
+
+footer .logo-baixo a {
+    color: white;
+}
+
+@media screen and (max-width:1070px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .menu,
+    .btn-contato {
+        display: none;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site p {
+        font-size: 20px;
+    }
+
+    .topo-do-site .img-txt img {
+        width: 110%;
+        height: 130%;
+    }
+
+    section.topo-do-site .flex {
+        gap: 20px;
+    }
+
+    section.especialidades {
+        padding: 20px 10%;
+    }
+
+    .Especialidades .especilidades-box {
+        padding: 15px 0;
+    }
+
+    .Especialidades .especilidades-box {
+        padding: 15px 50px;
+    }
+
+    .Especialidades .especilidades-box:hover {
+        border-radius: 90px;
+    }
+
+    section.Sobre {
+        padding: 40px 8%;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+
+}
+
+@media screen and (max-width:500px) {
+    .Especialidades .especilidades-box {
+        padding: 15px 25px;
+    }
+
+}
+
+@media screen and (max-width:1070px) {
+    .flex {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Especialidades .especilidades-box:hover {
+        border-radius: 65px;
+        padding: 25px 50px;
+    }
+
+    .btn-abrir i {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-mobile .btn-fechar i {
+        cursor: pointer;
+    }
+
+    header nav.meno ul li a {
+        display: none;
+    }
+
+    .menu-mobile.abrir-menu~.orveley-mobile {
+        display: block;
+    }
+
+
+}
+
+@media screen and (max-width:400px) {
+    .img-sobre img {
+        display: none;
+    }
+
+    section.conteiner .flex .img-port {
+        margin: 30 12pxpx;
+    }
+}
